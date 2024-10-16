@@ -85,7 +85,7 @@ st.title("Translation App")
 
 # Language selection
 st.write("Select the languages for translation:")
-input_lang = st.selectbox("Input Language", list(LANGUAGES.values()), index=0)  # Default to the first option
+input_lang = st.selectbox("Input Language", list(LANGUAGES.values()), index=list(LANGUAGES.values()).index('English'))  # Default to English
 output_lang = st.selectbox("Output Language", list(LANGUAGES.values()), index=1)  # Default to the second option
 
 # Input text
